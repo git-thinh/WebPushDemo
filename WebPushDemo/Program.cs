@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using WebPush;
 
 namespace WebPushDemo
 {
@@ -14,6 +15,12 @@ namespace WebPushDemo
     {
         public static void Main(string[] args)
         {
+            //VapidDetails vapidKeys = VapidHelper.GenerateVapidKeys();
+
+            //// Prints 2 URL Safe Base64 Encoded Strings
+            //Console.WriteLine("Public {0}", vapidKeys.PublicKey);
+            //Console.WriteLine("Private {0}", vapidKeys.PrivateKey);
+
             BuildWebHost(args).Run();
         }
 
